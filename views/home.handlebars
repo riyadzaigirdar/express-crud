@@ -1,0 +1,23 @@
+<h1>{{title}}</h1>
+<h2>Members</h2>
+<ul class="list-group mt-4">
+    {{#each members}}
+    <li class="list-group-item">
+        {{name}}: {{age}}
+    </li>
+    {{/each}}
+</ul>
+
+<form class="mt-5" method="POST" action="/api/members">
+  <h5>Submit form</h5>
+  <div class="form-group">
+    <label for="exampleInputname1">Name</label>
+    <input name="name" type="name" class="form-control" id="exampleInputname1" aria-describedby="emailHelp" placeholder="Enter Username">
+    <small id="nameHelp" class="form-text text-muted">We'll never share your name with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputage1">Age</label>
+    <input name="age" type="password" class="form-control" id="exampleInputage1" placeholder="age">
+  </div>
+  <button type="submit" class="btn btn-block btn-primary">Submit</button>
+</form>

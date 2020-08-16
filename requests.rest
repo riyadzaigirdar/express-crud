@@ -1,0 +1,30 @@
+GET http://localhost:5000/api/members
+
+###
+
+GET http://localhost:5000/api/members/4
+
+###
+
+POST http://localhost:5000/api/members
+Content-Type: application/json
+
+{
+    "name":"abbu",
+    "age": "60+ handsome"
+}
+
+###
+
+PATCH http://localhost:5000/api/members/3
+Content-Type: application/json
+
+{
+    "name": "Onni Zaigirdar",
+    "age": 17
+}
+ 
+
+###
+
+DELETE http://localhost:5000/api/members/4c90d56b-6f6f-4a9f-9c89-53b29973f1f4
